@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+
+header .header__left {
+    min-width: 62rem;
+    flex: 1;
+}
+
+header .header__left p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    min-width: 50rem;
+}
+
+header .header__right .header__image {
+    position: relative;
+    line-height: 0;
+}
+
+header .header__right .header__image .img-profile {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    min-width: 25rem;
+    max-width: 100%;
+}
+
+header .header__right .header__image .background {
+    position: absolute;
+    top: 0rem;
+    right: -2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    header .header__left h1{
+        text-align: center;
+    }
+
+    header .header__left p {
+        margin: 2rem auto 4rem;
+    }
+
+}
